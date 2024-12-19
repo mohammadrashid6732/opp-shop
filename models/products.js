@@ -10,10 +10,10 @@ class Products {
   createCard(data) {
     const cardEle = document.createElement("div");
     const imgEle = this.productImg(data);
-    const productEle = this.productInfo(data);
+    const infoEle = this.productInfo(data);
 
     cardEle.innerHTML = imgEle;
-    cardEle.innerHTML += productEle;
+    cardEle.innerHTML += infoEle;
     this.parent.appendChild(cardEle);
   }
   productImg(data) {
@@ -25,7 +25,7 @@ class Products {
   productInfo(data) {
     const { id, name, price } = data;
     const productJsx = ` 
-      <div>
+      <div id="products-info">
         <h3>${name}</h3>
         <div>
           <span>${price}</span>

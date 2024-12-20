@@ -14,81 +14,106 @@
 
 body {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto; /* مرکز کردن صفحه */
+  background-color: var(--color-light); /* افزودن پس‌زمینه */
+  color: var(--color-primary); /* متن کلی */
 }
+
 header {
+  text-align: center; /* تنظیم متن در مرکز */
   color: var(--color-primary);
   padding: 30px 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
 section {
   display: flex;
-  flex: 3;
+  flex: 1;
   flex-wrap: wrap;
 }
+
 main {
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  align-items: flex-start; /* هم‌راستا کردن مقاطع */
+  margin-top: 50px; /* کاهش فاصله */
+  padding: 0 20px; /* فاصله اطراف */
 }
+
 #products {
   display: flex;
   flex-wrap: wrap;
+  flex: 3;
   justify-content: space-between;
+  gap: 20px; /* افزودن فاصله بین محصولات */
   margin-right: 40px;
 }
+
 #products > div {
-  width: 320px;
+  width: calc(33% - 20px); /* تطبیق خودکار سایز */
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 30px;
-  padding: 10px;
-  margin-bottom: 40px;
+  border-radius: 20px; /* کاهش انحنای گوشه‌ها */
+  padding: 20px; /* افزایش فضای داخلی */
+  background-color: #fff; /* افزودن پس‌زمینه به کارت‌ها */
 }
+
 #products img {
-  width: 300px;
-  border-radius: 25px;
+  width: 100%; /* تصاویر واکنش‌گرا */
+  border-radius: 20px;
+  height: auto; /* حفظ نسبت تصویر */
 }
+
 #products-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--color-secondary);
   width: 100%;
-  border-radius: 25px;
-  height: 120px;
-  padding: 25px;
-  margin-top: 30px;
+  border-radius: 15px;
+  height: auto; /* کارت انعطاف‌پذیر */
+  padding: 20px;
+  margin-top: 15px;
 }
+
 #products-info h3 {
   color: var(--color-primary);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-bottom: 10px; /* فاصله پایین متن */
 }
+
 #products-info div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #products-info span {
   font-size: 1.1rem;
   color: grey;
 }
+
 #products-info button {
-  background-color: #fff;
-  border: none;
+  background-color: var(--color-light);
+  border: 2px solid var(--color-primary); /* افزودن حاشیه */
   width: 40px;
   height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  font-size: 2rem;
+  line-height: 36px;
+  border-radius: 50%; /* دایره‌شکل دکمه‌ها */
+  font-size: 1.2rem;
   color: var(--color-primary);
   cursor: pointer;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 20px;
   transition: all 0.2s ease-in;
 }
+
 #products-info button:hover {
   background-color: var(--color-primary);
-  color: #fff;
-  border-radius: 40%;
+  color: var(--color-light); /* تطبیق رنگ متن و پس‌زمینه */
+}
+
+#products-info button:active {
+  transform: scale(0.95); /* افزودن انیمیشن کلیک */
 }

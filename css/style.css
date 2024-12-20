@@ -14,13 +14,13 @@
 
 body {
   max-width: 1400px;
-  margin: 0 auto; /* مرکز کردن صفحه */
-  background-color: var(--color-light); /* افزودن پس‌زمینه */
-  color: var(--color-primary); /* متن کلی */
+  margin: 0 auto; 
+  background-color: var(--color-light);
+  color: var(--color-primary); 
 }
 
 header {
-  text-align: center; /* تنظیم متن در مرکز */
+  text-align: center; 
   color: var(--color-primary);
   padding: 30px 0;
   font-size: 2rem;
@@ -36,9 +36,9 @@ section {
 main {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* هم‌راستا کردن مقاطع */
-  margin-top: 50px; /* کاهش فاصله */
-  padding: 0 20px; /* فاصله اطراف */
+  align-items: flex-start; 
+  margin-top: 50px; 
+  padding: 0 20px; 
 }
 
 #products {
@@ -46,25 +46,25 @@ main {
   flex-wrap: wrap;
   flex: 3;
   justify-content: space-between;
-  gap: 20px; /* افزودن فاصله بین محصولات */
+  gap: 20px; 
   margin-right: 40px;
 }
 
 #products > div {
-  width: calc(33% - 20px); /* تطبیق خودکار سایز */
+  width: calc(33% - 20px); 
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 20px; /* کاهش انحنای گوشه‌ها */
-  padding: 20px; /* افزایش فضای داخلی */
-  background-color: #fff; /* افزودن پس‌زمینه به کارت‌ها */
+  border-radius: 20px; 
+  padding: 20px; 
+  background-color: #fff; 
 }
 
 #products img {
-  width: 100%; /* تصاویر واکنش‌گرا */
+  width: 100%; 
   border-radius: 20px;
-  height: auto; /* حفظ نسبت تصویر */
+  height: auto; 
 }
 
 #products-info {
@@ -74,7 +74,7 @@ main {
   background-color: var(--color-secondary);
   width: 100%;
   border-radius: 15px;
-  height: auto; /* کارت انعطاف‌پذیر */
+  height: auto; 
   padding: 20px;
   margin-top: 15px;
 }
@@ -82,7 +82,7 @@ main {
 #products-info h3 {
   color: var(--color-primary);
   font-size: 1.2rem;
-  margin-bottom: 10px; /* فاصله پایین متن */
+  margin-bottom: 10px;
 }
 
 #products-info div {
@@ -98,11 +98,11 @@ main {
 
 #products-info button {
   background-color: var(--color-light);
-  border: 2px solid var(--color-primary); /* افزودن حاشیه */
+  border: 2px solid var(--color-primary); 
   width: 40px;
   height: 40px;
   line-height: 36px;
-  border-radius: 50%; /* دایره‌شکل دکمه‌ها */
+  border-radius: 50%; 
   font-size: 1.2rem;
   color: var(--color-primary);
   cursor: pointer;
@@ -111,9 +111,9 @@ main {
 
 #products-info button:hover {
   background-color: var(--color-primary);
-  color: var(--color-light); /* تطبیق رنگ متن و پس‌زمینه */
+  color: var(--color-light); 
 }
 
 #products-info button:active {
-  transform: scale(0.95); /* افزودن انیمیشن کلیک */
+  transform: scale(0.95); 
 }

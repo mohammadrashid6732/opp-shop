@@ -1,7 +1,8 @@
 class Products {
-  constructor(parent, products) {
+  constructor(parent, products, cart) {
     this.parent = parent;
     this.products = products;
+    this.cart = cart;
   }
   showProducts() {
     this.products.forEach((product) => this.createCard(product));
